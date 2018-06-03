@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.StudentFragment">
+
+    <GridView
+        android:id="@+id/student_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_small"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:columnWidth="@dimen/columnswidth"
+        android:minWidth="@dimen/mincolumnswidth"
+        android:stretchMode="columnWidth"
+        android:scrollbars="none">
+
+    </GridView>
+
+</FrameLayout>
