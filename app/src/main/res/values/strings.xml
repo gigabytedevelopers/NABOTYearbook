@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">NABOT Yearbook</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_search">Search</string>
+
+    <!--Navigation Drawer-->
+    <string name="nav_home">Home</string>
+    <string name="nav_about">About</string>
+    <string name="nav_excos">Excos</string>
+    <string name="nav_student">Students</string>
+
+    <!--Info-->
+    <string name="nabot">Nabot</string>
+    <string name="nabot_description">National Association Of Botany Students Unizik Chapter</string>
+
+    <!--Social Media-->
+    <string name="fb">Facebook</string>
+    <string name="tw">Twitter</string>
+    <string name="wb">Website</string>
+
+    <!--Coder/'s info-->
+    <string name="gig">Developed by Gigabyte Developers</string>
+
+
+    <!--Student Names-->
+
+    <!--Test-->
+    <string name="test_name">Mezue M. Chuwkudi</string>
+    <string name="test_quotes">If it doesn\'t gain me anything leave it</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
