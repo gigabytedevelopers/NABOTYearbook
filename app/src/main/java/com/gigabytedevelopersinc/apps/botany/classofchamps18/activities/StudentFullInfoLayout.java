@@ -1,6 +1,7 @@
 package com.gigabytedevelopersinc.apps.botany.classofchamps18.activities;
 
 import android.content.Context;
+import android.media.Image;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;

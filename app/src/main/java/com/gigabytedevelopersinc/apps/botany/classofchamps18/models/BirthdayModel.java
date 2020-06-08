@@ -5,10 +5,27 @@ public class BirthdayModel {
     private String name;
     private String nickName;
     private String date;
+    private String imageUrl;
 
 
     public BirthdayModel(int imageResource, String name, String nickName, String date){
         this.imageResource = imageResource;
+        this.name = name;
+        this.nickName = nickName;
+        this.date = date;
+
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public BirthdayModel(String imageUrl, String name, String nickName, String date){
+        this.imageUrl = imageUrl;
         this.name = name;
         this.nickName = nickName;
         this.date = date;

@@ -13,22 +13,26 @@ import android.net.Uri;
 import android.os.Build;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-
+import androidx.swiperefreshlayout.widget.CircularProgressDrawable;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.DecodeFormat;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.FutureTarget;
 import com.bumptech.glide.request.RequestOptions;
 import com.crashlytics.android.Crashlytics;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.R;
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.activities.MainActivity;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.fragment.HomeNewsFragment;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.fragment.StudentFragment;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.models.BirthdayModel;
@@ -36,12 +40,15 @@ import com.gigabytedevelopersinc.apps.botany.classofchamps18.models.StudentsMode
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.utils.CardViewClickListener;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.utils.TinyDB;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
+import java.util.concurrent.ExecutionException;
 
 public class StudentsAdapter extends BaseAdapter {
 
@@ -76,11 +83,7 @@ public class StudentsAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-
         StudentsModel studentsModel = studentsModels.get(i);
-        Date todayDate = Calendar.getInstance().getTime();
-        SimpleDateFormat formatter = new SimpleDateFormat("dd"+" "+"MMMM");
-        String todayString = formatter.format(todayDate);
 
         View gridView;
         if (view == null) {
@@ -111,16 +114,6 @@ public class StudentsAdapter extends BaseAdapter {
         studentQ.setText(studentsModel.getStudentQuotes());
         studentRN.setText(studentsModel.getStudentRegNo());
 
-        HomeNewsFragment.birthdayList = new ArrayList<>();
-        for (StudentsModel studentsModel1 : studentsModels){
-            if (todayString.equals(studentsModel1.getDob())){
-                BirthdayModel birthdayModel = new BirthdayModel(R.drawable.user_male,
-                        studentsModel1.getStudentName(),
-                        studentsModel1.getNickName(),
-                        studentsModel1.getDob());
-                HomeNewsFragment.birthdayList.add(birthdayModel);
-            }
-        }
         if (haveNetworkConnection()){
 
               RequestOptions requestOptions = RequestOptions

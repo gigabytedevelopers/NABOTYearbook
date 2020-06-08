@@ -6,6 +6,7 @@
     <string name="class_of_champion">Class of Champions</string>
     <string name="fyi">Final Year Forum (FYF)</string>
     <string name="birth_wish">Wish a Happy Birthday</string>
+    <string name="contact_staff">Contact this Staff</string>
     <string name="its_my_birthday">Hey It\'s my Birthday</string>
     <string name="student_info">Student Info</string>
     <string name="phone_no">Phone Number</string>
@@ -66,9 +67,10 @@
     <!--Info-->
     <string name="nabot">Class Of Champions \'18</string>
     <string name="coc_desc">Class Of Champions \'18 Students</string>
-    <string name="fyf_desc">Final Year Forum Student Excos</string>
+    <string name="fyf_desc">Final Year Forum Excos</string>
     <string name="excos_desc">Departmental Excos</string>
-    <string name="nabot_description">National Association Of Botany Students Unizik Chapter</string>
+    <string name="staffs_desc">Staffs (both Academic and Non-Academic)</string>
+    <string name="nabot_description">National Association Of Botany Students \nUnizik Chapter</string>
     <string name="feedback">Send Us a Feedback</string>
 
     <!--Social Media-->

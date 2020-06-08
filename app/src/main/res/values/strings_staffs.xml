@@ -1,10 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="ekwealor">Dr. Ekwealor</string>
+    <string name="ekwealor_pic">ekwealor_pic</string>
+    <string name="ekwealor_office">Head of Department</string>
+    <string name="ekwealor_phone">+234</string>
+
     <string name="okigbo">Prof. Raphael Okigbo</string>
+    <string name="okigbo_pic">okigbo_pic</string>
     <string name="okigbo_office">Lecturer</string>
     <string name="okigbo_phone">+2348158576171</string>
 
     <string name="amadi">Prof. Jude Amadi</string>
+    <string name="amadi_pic">amadi_pic</string>
     <string name="amadi_office">Lecturer</string>
     <string name="amadi_phone">+2348158576171</string>
+
+    <string name="okeke">Prof. Okeke</string>
+    <string name="okeke_pic">okeke_pic</string>
+    <string name="okeke_office">Lecturer</string>
+    <string name="okeke_phone">+234</string>
+
+    <string name="mbaekwe">Prof. Mbaekwe</string>
+    <string name="mbaekwe_pic">mbaekwe_pic</string>
+    <string name="mbaekwe_office">Lecturer</string>
+    <string name="mbaekwe_phone">+234</string>
+
+    <string name="ugwuoke">Dr. Ugwuoke</string>
+    <string name="ugwuoke_pic">ugwuoke_pic</string>
+    <string name="ugwuoke_office">Lecturer</string>
+    <string name="ugwuoke_phone">+234</string>
+
+    <string name="ezeabara">Dr. Ezeabara</string>
+    <string name="ezeabara_pic">ezeabara_pic</string>
+    <string name="ezeabara_office">Lecturer</string>
+    <string name="ezeabara_phone">+234</string>
+
+    <string name="ada">Mrs. Ada</string>
+    <string name="ada_pic">ada_pic</string>
+    <string name="ada_office">Lecturer</string>
+    <string name="ada_phone">+234</string>
 </resources>

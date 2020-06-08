@@ -13,14 +13,14 @@
         android:orientation="vertical">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/imageview_insane_height">
-        <ImageView
-            android:id="@+id/birthday_card_image"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/nav_student"
-            android:src="@drawable/user_male"/>
+            android:layout_height="@dimen/app_bar_height">
+            <ImageView
+                android:id="@+id/birthday_card_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/nav_student"
+                android:src="@drawable/user_male"/>
             <TextView
                 android:id="@+id/happy_birthday"
                 android:layout_width="wrap_content"

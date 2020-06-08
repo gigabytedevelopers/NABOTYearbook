@@ -51,6 +51,20 @@ public class FyF_Model {
         this.nickName = nickName;
     }
 
+    public FyF_Model(String fyfExcossName, String fyfQuotes, String imageUrl, String callPhone,
+                     String dob, String emailAddress, String localGov, String state, String nickName){
+
+        this.fyfExcossName = fyfExcossName;
+        this.fyfQuotes = fyfQuotes;
+        this.imageUrl = imageUrl;
+        this.callPhone = callPhone;
+        this.dob = dob;
+        this.emailAddress = emailAddress;
+        this.localGov = localGov;
+        this.state = state;
+        this.nickName = nickName;
+    }
+
 
     public String getImageUrl() {
         return imageUrl;

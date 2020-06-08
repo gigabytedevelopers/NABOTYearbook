@@ -37,7 +37,8 @@ public class HomeMainFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-                classofchampion = view.findViewById(R.id.class_of_champion);
+
+        classofchampion = view.findViewById(R.id.class_of_champion);
         finalyearforum = view.findViewById(R.id.fyf);
         excoss = view.findViewById(R.id.excoss_cardview);
         staffs = view.findViewById(R.id.staffs_cardview);

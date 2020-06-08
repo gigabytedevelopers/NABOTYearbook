@@ -1,8 +1,17 @@
 package com.gigabytedevelopersinc.apps.botany.classofchamps18.activities;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentManager;
+
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.fragment.HomeNewsFragment;
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.utils.Utils;
 import com.google.android.material.navigation.NavigationView;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.core.view.GravityCompat;
@@ -11,22 +20,41 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.R;
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.adapters.ExcossAdapter;
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.adapters.StudentsAdapter;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.fragment.AboutFragment;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.fragment.ExcossFragment;
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.fragment.FyF_Fragment;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.fragment.HomeFragment;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.fragment.StaffsFragment;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.fragment.StudentFragment;
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.models.ExcossModel;
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.models.StudentsModel;
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.receivers.AlarmReciever;
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.receivers.NotificationServiceReceiver;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.utils.TinyDB;
+
+import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, SearchView.OnQueryTextListener{
-        Toolbar toolbar;
-        private TinyDB tinyDB;
+    Toolbar toolbar;
+    private TinyDB tinyDB;
     private boolean haveConnectedWifi = false;
     private boolean haveConnectedMobile = false;
+    private AlarmManager alarmMgr;
+    private PendingIntent alarmIntent;
+    public static Context context = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,21 +64,36 @@ public class MainActivity extends AppCompatActivity
         toolbar =  findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+        Utils.scheduleJob(getApplicationContext());
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-        HomeFragment home = new HomeFragment();
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.container_frame, home);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
-
+        String type = getIntent().getStringExtra("From");
+        if (type != null) {
+            switch (type) {
+                case "notifyNewsFragment":
+                    toolbar.setTitle("Birthday Celebrant(s) for Today");
+                    NavigationView navigationView = findViewById(R.id.nav_view);
+                    navigationView.setNavigationItemSelectedListener(this);
+                    HomeNewsFragment fragment = new HomeNewsFragment();
+                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction.replace(R.id.container_frame, fragment).commit();
+                    Toast toast = Toast.makeText(this, "Now, Click on News at the Bottom of this Page to See the Celebrant(s)", 10*1000);
+                    toast.setGravity(Gravity.CENTER, 0,0);
+                    toast.show();
+            }
+        } else {
+            NavigationView navigationView = findViewById(R.id.nav_view);
+            navigationView.setNavigationItemSelectedListener(this);
+            HomeFragment home = new HomeFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.container_frame, home);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+        }
     }
 
     @Override
@@ -110,7 +153,7 @@ public class MainActivity extends AppCompatActivity
             tinyDB.putString("toolbarString", toolbar.getTitle().toString());
 
         } else if (id == R.id.nav_fyf) {
-            ExcossFragment fyfExcossFragment = new ExcossFragment();
+            FyF_Fragment fyfExcossFragment = new FyF_Fragment();
             FragmentManager fyfExcossManager = getSupportFragmentManager();
             fyfExcossManager.beginTransaction()
                     .replace(R.id.container_frame, fyfExcossFragment)

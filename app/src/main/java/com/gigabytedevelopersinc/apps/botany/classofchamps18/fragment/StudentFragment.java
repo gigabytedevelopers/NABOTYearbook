@@ -18,7 +18,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
-
+import android.widget.Toast;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.R;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.activities.StudentFullInfoLayout;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.adapters.StudentsAdapter;
@@ -28,8 +28,10 @@ import com.google.gson.Gson;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -1860,7 +1862,7 @@ public class StudentFragment extends Fragment{
                     getString(R.string.quote_2014574339_joshua),
                     R.drawable.user_male,
                     getString(R.string.phone_2014574339_joshua),
-                    getString(R.string.date_unknown),
+                    getString(R.string.day_27) + " " + getString(R.string.may),
                     getString(R.string.email_2014574339_joshua),
                     getString(R.string.lga_2014574339_joshua),
                     getString(R.string.state_Abia),

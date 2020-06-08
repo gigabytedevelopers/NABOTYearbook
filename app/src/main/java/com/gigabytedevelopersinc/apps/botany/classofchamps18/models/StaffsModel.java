@@ -7,25 +7,20 @@ public class StaffsModel {
     private String imageUrl;
     private String staffName;
     private String staffsOffice;
-    private String callPhone;
-    private String dob;
+    private String phone;
     private int imageResource;
-    private String emailAddress;
-    private String localGov;
-    private String state;
-    private String nickName;
 
-    public StaffsModel (String staffName, String staffsOffice, String imageUrl, String callPhone) {
+    public StaffsModel (String staffName, String staffsOffice, String imageUrl, String phone) {
         this.staffName = staffName;
         this.staffsOffice = staffsOffice;
         this.imageUrl = imageUrl;
-        this.callPhone = callPhone;
+        this.phone = phone;
     }
-    public StaffsModel (String staffName, String staffsOffice, int imageResource, String callPhone) {
+    public StaffsModel (String staffName, String staffsOffice, int imageResource, String phone) {
         this.staffName = staffName;
         this.staffsOffice = staffsOffice;
         this.imageResource = imageResource;
-        this.callPhone = callPhone;
+        this.phone = phone;
     }
 
     public String getImageUrl() {
@@ -52,13 +47,21 @@ public class StaffsModel {
         this.staffsOffice = staffsOffice;
     }
 
-    public String getCallPhone() {
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    /*public String getCallPhone() {
         return callPhone;
     }
 
     public void setCallPhone(String callPhone) {
         this.callPhone = callPhone;
-    }
+    }*/
 
     public int getImageResource() {
         return imageResource;

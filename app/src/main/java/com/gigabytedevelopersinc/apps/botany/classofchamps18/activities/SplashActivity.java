@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 
 import com.crashlytics.android.Crashlytics;
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.receivers.NotificationEventReceiver;
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.receivers.NotificationServiceReceiver;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -43,7 +45,9 @@ public class SplashActivity extends AppCompatActivity {
                 Manifest.permission.READ_CONTACTS,
                 Manifest.permission.INTERNET,
                 Manifest.permission.ACCESS_NETWORK_STATE,
-                Manifest.permission.ACCESS_WIFI_STATE
+                Manifest.permission.ACCESS_WIFI_STATE,
+                Manifest.permission.WAKE_LOCK,
+                Manifest.permission.RECEIVE_BOOT_COMPLETED
         };
         /*String[] PERMISSIONS;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
@@ -84,6 +88,8 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        NotificationEventReceiver.setupAlarm(getApplicationContext());
+        startService(new Intent(this, NotificationServiceReceiver.class));
         //setContentView(R.layout.splash_layout);
 
 

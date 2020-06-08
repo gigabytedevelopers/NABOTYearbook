@@ -4,6 +4,7 @@ package com.gigabytedevelopersinc.apps.botany.classofchamps18.fragment;
 import android.Manifest;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -24,6 +25,7 @@ import android.widget.TextView;
 import com.crashlytics.android.Crashlytics;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.R;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.activities.StudentFullInfoLayout;
+import com.gigabytedevelopersinc.apps.botany.classofchamps18.models.StudentsModel;
 import com.gigabytedevelopersinc.apps.botany.classofchamps18.utils.TinyDB;
 
 import java.util.Objects;

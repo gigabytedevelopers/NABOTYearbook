@@ -85,8 +85,8 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@drawable/excoss_banner"
-                            android:contentDescription="@string/nav_excos"
+                            android:src="@drawable/fyf_banner"
+                            android:contentDescription="@string/nav_fyf"
                             android:scaleType="centerCrop"/>
 
                         <TextView
@@ -209,7 +209,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/nabot_description" />
+                            android:text="@string/staffs_desc" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

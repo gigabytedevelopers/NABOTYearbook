@@ -29,8 +29,8 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * A simple {@link Fragment} subclass.
- */
+ * @author Created by Emmanuel Nwokoma (Founder and CEO at Gigabyte Developers) on 8/9/2018
+ **/
 public class ExcossFragment extends Fragment {
     public static List<ExcossModel> list, listFull;
     private RecyclerView recyclerView;

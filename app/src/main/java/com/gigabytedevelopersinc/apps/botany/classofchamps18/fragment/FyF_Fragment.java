@@ -39,7 +39,7 @@ public class FyF_Fragment extends Fragment {
     private RecyclerView recyclerView;
     public FyF_Adapter adapter;
     private String studentName,studentQuotes,studentNickName,studentsPhone,studentsDob,
-            studentsEmail,studentsLocalGov,studentsState;
+            studentsEmail,studentsLocalGov,studentsState,studentImage;
     private boolean haveConnectedWifi = false;
     private boolean haveConnectedMobile = false;
     private String IMAGE_URL = "http://class-of-champions-2018.000webhostapp.com/students/";
@@ -69,30 +69,55 @@ public class FyF_Fragment extends Fragment {
         tinyDB = new TinyDB(getActivity());
         adapter = new FyF_Adapter(getContext(), list, (view1, position) -> {
             try {
-                JSONArray studentJson = new JSONArray(openFullInfo(listFull,position));
+                JSONArray studentJson = new JSONArray(openFullInfo(listFull, position));
 
-                for (int j = 0; j < studentJson.length(); j++) {
-                    JSONObject obj2 = studentJson.getJSONObject(j);
-                    studentName = obj2.getString("fyfExcossName");
-                    studentQuotes = obj2.getString("fyfQuotes");
-                    studentsPhone = obj2.getString("callPhone");
-                    studentsDob = obj2.getString("dob");
-                    studentsEmail = obj2.getString("emailAddress");
-                    studentsLocalGov = obj2.getString("localGov");
-                    studentsState = obj2.getString("state");
-                    studentNickName = obj2.getString("nickName");
+                if (haveNetworkConnection()) {
+                    for (int j = 0; j < studentJson.length(); j++) {
+                        JSONObject obj2 = studentJson.getJSONObject(j);
+                        studentImage = obj2.getString("imageUrl");
+                        studentName = obj2.getString("fyfExcossName");
+                        studentQuotes = obj2.getString("fyfQuotes");
+                        studentsPhone = obj2.getString("callPhone");
+                        studentsDob = obj2.getString("dob");
+                        studentsEmail = obj2.getString("emailAddress");
+                        studentsLocalGov = obj2.getString("localGov");
+                        studentsState = obj2.getString("state");
+                        studentNickName = obj2.getString("nickName");
 
+                    }
+
+                    tinyDB.putString("studentImage", studentImage);
+                    tinyDB.putString("studentName", studentName);
+                    tinyDB.putString("studentQuotes", studentQuotes);
+                    tinyDB.putString("studentPhone", studentsPhone);
+                    tinyDB.putString("studentsDob", studentsDob);
+                    tinyDB.putString("studentsEmail", studentsEmail);
+                    tinyDB.putString("studentsLocalGov", studentsLocalGov);
+                    tinyDB.putString("studentsState", studentsState);
+                    tinyDB.putString("studentNickName", studentNickName);
+                } else {
+                    for (int j = 0; j < studentJson.length(); j++) {
+                        JSONObject obj2 = studentJson.getJSONObject(j);
+                        studentName = obj2.getString("fyfExcossName");
+                        studentQuotes = obj2.getString("fyfQuotes");
+                        studentsPhone = obj2.getString("callPhone");
+                        studentsDob = obj2.getString("dob");
+                        studentsEmail = obj2.getString("emailAddress");
+                        studentsLocalGov = obj2.getString("localGov");
+                        studentsState = obj2.getString("state");
+                        studentNickName = obj2.getString("nickName");
+
+                    }
+
+                    tinyDB.putString("studentName", studentName);
+                    tinyDB.putString("studentQuotes", studentQuotes);
+                    tinyDB.putString("studentPhone", studentsPhone);
+                    tinyDB.putString("studentsDob", studentsDob);
+                    tinyDB.putString("studentsEmail", studentsEmail);
+                    tinyDB.putString("studentsLocalGov", studentsLocalGov);
+                    tinyDB.putString("studentsState", studentsState);
+                    tinyDB.putString("studentNickName", studentNickName);
                 }
-
-
-                tinyDB.putString("studentName", studentName);
-                tinyDB.putString("studentQuotes", studentQuotes);
-                tinyDB.putString("studentPhone", studentsPhone);
-                tinyDB.putString("studentsDob", studentsDob);
-                tinyDB.putString("studentsEmail", studentsEmail);
-                tinyDB.putString("studentsLocalGov", studentsLocalGov);
-                tinyDB.putString("studentsState", studentsState);
-                tinyDB.putString("studentNickName", studentNickName);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -198,71 +223,139 @@ public class FyF_Fragment extends Fragment {
     }
 
     private void fyfListFull(){
-        FyF_Model fyF_model = new FyF_Model(getString(R.string.name_2014574424_zikora),
-                getString(R.string.quote_2014574424_zikora),
-                R.drawable.user_male,
-                getString(R.string.phone_2014574424_zikora),
-                getString(R.string.day_17) + " " + getString(R.string.may),
-                getString(R.string.email_2014574424_zikora),
-                getString(R.string.lga_2014574424_zikora),
-                getString(R.string.state_Anambra),
-                getString(R.string.nick_2014574424_zikora));
-        listFull.add(fyF_model);
+        if (!haveNetworkConnection()) {
+            FyF_Model fyF_model = new FyF_Model(getString(R.string.name_2014574424_zikora),
+                    getString(R.string.quote_2014574424_zikora),
+                    R.drawable.user_male,
+                    getString(R.string.phone_2014574424_zikora),
+                    getString(R.string.day_17) + " " + getString(R.string.may),
+                    getString(R.string.email_2014574424_zikora),
+                    getString(R.string.lga_2014574424_zikora),
+                    getString(R.string.state_Anambra),
+                    getString(R.string.nick_2014574424_zikora));
+            listFull.add(fyF_model);
 
-        FyF_Model fyF_model1 = new FyF_Model(getString(R.string.name_2014574384_joyce),
-                getString(R.string.quote_2014574384_joyce),
-                R.drawable.user_female,
-                getString(R.string.phone_2014574384_joyce),
-                getString(R.string.day_18) + " " + getString(R.string.oct),
-                getString(R.string.email_2014574384_joyce),
-                getString(R.string.lga_2014574384_joyce),
-                getString(R.string.state_Anambra),
-                getString(R.string.nick_2014574384_joyce));
-        listFull.add(fyF_model1);
+            FyF_Model fyF_model1 = new FyF_Model(getString(R.string.name_2014574384_joyce),
+                    getString(R.string.quote_2014574384_joyce),
+                    R.drawable.user_female,
+                    getString(R.string.phone_2014574384_joyce),
+                    getString(R.string.day_18) + " " + getString(R.string.oct),
+                    getString(R.string.email_2014574384_joyce),
+                    getString(R.string.lga_2014574384_joyce),
+                    getString(R.string.state_Anambra),
+                    getString(R.string.nick_2014574384_joyce));
+            listFull.add(fyF_model1);
 
-        FyF_Model fyF_model2 = new FyF_Model(getString(R.string.name_2014574409_rita),
-                getString(R.string.quote_2014574409_rita),
-                R.drawable.user_female,
-                getString(R.string.phone_2014574409_rita),
-                getString(R.string.day_27) + " " + getString(R.string.may),
-                getString(R.string.email_2014574409_rita),
-                getString(R.string.lga_2014574409_rita),
-                getString(R.string.state_Anambra),
-                getString(R.string.nick_2014574409_rita));
-        listFull.add(fyF_model2);
+            FyF_Model fyF_model2 = new FyF_Model(getString(R.string.name_2014574409_rita),
+                    getString(R.string.quote_2014574409_rita),
+                    R.drawable.user_female,
+                    getString(R.string.phone_2014574409_rita),
+                    getString(R.string.day_27) + " " + getString(R.string.may),
+                    getString(R.string.email_2014574409_rita),
+                    getString(R.string.lga_2014574409_rita),
+                    getString(R.string.state_Anambra),
+                    getString(R.string.nick_2014574409_rita));
+            listFull.add(fyF_model2);
 
-        FyF_Model fyF_model3 = new FyF_Model(getString(R.string.name_2014574333_francess),
-                getString(R.string.quote_2014574333_francess),
-                R.drawable.user_female,
-                getString(R.string.phone_2014574333_francess),
-                getString(R.string.day_8) + " " + getString(R.string.apr),
-                getString(R.string.email_2014574333_francess),
-                getString(R.string.lga_2014574333_francess),
-                getString(R.string.state_Anambra),
-                getString(R.string.nick_2014574333_francess));
-        listFull.add(fyF_model3);
+            FyF_Model fyF_model3 = new FyF_Model(getString(R.string.name_2014574333_francess),
+                    getString(R.string.quote_2014574333_francess),
+                    R.drawable.user_female,
+                    getString(R.string.phone_2014574333_francess),
+                    getString(R.string.day_8) + " " + getString(R.string.apr),
+                    getString(R.string.email_2014574333_francess),
+                    getString(R.string.lga_2014574333_francess),
+                    getString(R.string.state_Anambra),
+                    getString(R.string.nick_2014574333_francess));
+            listFull.add(fyF_model3);
 
-        FyF_Model fyF_model4 = new FyF_Model(getString(R.string.name_2014574360_blessing),
-                getString(R.string.quote_2014574360_blessing),
-                R.drawable.user_female,
-                getString(R.string.phone_2014574360_blessing),
-                getString(R.string.day_3) + " " + getString(R.string.may),
-                getString(R.string.email_2014574360_blessing),
-                getString(R.string.lga_2014574360_blessing),
-                getString(R.string.state_Abia),
-                getString(R.string.nick_2014574360_blessing));
-        listFull.add(fyF_model4);
+            FyF_Model fyF_model4 = new FyF_Model(getString(R.string.name_2014574360_blessing),
+                    getString(R.string.quote_2014574360_blessing),
+                    R.drawable.user_female,
+                    getString(R.string.phone_2014574360_blessing),
+                    getString(R.string.day_3) + " " + getString(R.string.may),
+                    getString(R.string.email_2014574360_blessing),
+                    getString(R.string.lga_2014574360_blessing),
+                    getString(R.string.state_Abia),
+                    getString(R.string.nick_2014574360_blessing));
+            listFull.add(fyF_model4);
 
-        FyF_Model fyF_model5 = new FyF_Model(getString(R.string.name_2014574330_lawrence),
-                getString(R.string.quote_2014574330_lawrence),
-                R.drawable.user_male,
-                getString(R.string.phone_2014574330_lawrence),
-                getString(R.string.day_3) + " " + getString(R.string.jun),
-                getString(R.string.email_2014574330_lawrence),
-                getString(R.string.lga_2014574330_lawrence),
-                getString(R.string.state_Enugu),
-                getString(R.string.nick_2014574330_lawrence));
-        listFull.add(fyF_model5);
+            FyF_Model fyF_model5 = new FyF_Model(getString(R.string.name_2014574330_lawrence),
+                    getString(R.string.quote_2014574330_lawrence),
+                    R.drawable.user_male,
+                    getString(R.string.phone_2014574330_lawrence),
+                    getString(R.string.day_3) + " " + getString(R.string.jun),
+                    getString(R.string.email_2014574330_lawrence),
+                    getString(R.string.lga_2014574330_lawrence),
+                    getString(R.string.state_Enugu),
+                    getString(R.string.nick_2014574330_lawrence));
+            listFull.add(fyF_model5);
+        } else {
+            FyF_Model fyF_model = new FyF_Model(getString(R.string.name_2014574424_zikora),
+                    getString(R.string.quote_2014574424_zikora),
+                    IMAGE_URL + getString(R.string.no_2014574424) + ".jpg",
+                    getString(R.string.phone_2014574424_zikora),
+                    getString(R.string.day_17) + " " + getString(R.string.may),
+                    getString(R.string.email_2014574424_zikora),
+                    getString(R.string.lga_2014574424_zikora),
+                    getString(R.string.state_Anambra),
+                    getString(R.string.nick_2014574424_zikora));
+            listFull.add(fyF_model);
+
+            FyF_Model fyF_model1 = new FyF_Model(getString(R.string.name_2014574384_joyce),
+                    getString(R.string.quote_2014574384_joyce),
+                    IMAGE_URL + getString(R.string.no_2014574384) + ".jpg",
+                    getString(R.string.phone_2014574384_joyce),
+                    getString(R.string.day_18) + " " + getString(R.string.oct),
+                    getString(R.string.email_2014574384_joyce),
+                    getString(R.string.lga_2014574384_joyce),
+                    getString(R.string.state_Anambra),
+                    getString(R.string.nick_2014574384_joyce));
+            listFull.add(fyF_model1);
+
+            FyF_Model fyF_model2 = new FyF_Model(getString(R.string.name_2014574409_rita),
+                    getString(R.string.quote_2014574409_rita),
+                    IMAGE_URL + getString(R.string.no_2014574409) + ".jpg",
+                    getString(R.string.phone_2014574409_rita),
+                    getString(R.string.day_27) + " " + getString(R.string.may),
+                    getString(R.string.email_2014574409_rita),
+                    getString(R.string.lga_2014574409_rita),
+                    getString(R.string.state_Anambra),
+                    getString(R.string.nick_2014574409_rita));
+            listFull.add(fyF_model2);
+
+            FyF_Model fyF_model3 = new FyF_Model(getString(R.string.name_2014574333_francess),
+                    getString(R.string.quote_2014574333_francess),
+                    IMAGE_URL + getString(R.string.no_2014574333) + ".jpg",
+                    getString(R.string.phone_2014574333_francess),
+                    getString(R.string.day_8) + " " + getString(R.string.apr),
+                    getString(R.string.email_2014574333_francess),
+                    getString(R.string.lga_2014574333_francess),
+                    getString(R.string.state_Anambra),
+                    getString(R.string.nick_2014574333_francess));
+            listFull.add(fyF_model3);
+
+            FyF_Model fyF_model4 = new FyF_Model(getString(R.string.name_2014574360_blessing),
+                    getString(R.string.quote_2014574360_blessing),
+                    IMAGE_URL + getString(R.string.no_2014574360) + ".jpg",
+                    getString(R.string.phone_2014574360_blessing),
+                    getString(R.string.day_3) + " " + getString(R.string.may),
+                    getString(R.string.email_2014574360_blessing),
+                    getString(R.string.lga_2014574360_blessing),
+                    getString(R.string.state_Abia),
+                    getString(R.string.nick_2014574360_blessing));
+            listFull.add(fyF_model4);
+
+            FyF_Model fyF_model5 = new FyF_Model(getString(R.string.name_2014574330_lawrence),
+                    getString(R.string.quote_2014574330_lawrence),
+                    IMAGE_URL + getString(R.string.no_2014574330) + ".jpg",
+                    getString(R.string.phone_2014574330_lawrence),
+                    getString(R.string.day_3) + " " + getString(R.string.jun),
+                    getString(R.string.email_2014574330_lawrence),
+                    getString(R.string.lga_2014574330_lawrence),
+                    getString(R.string.state_Enugu),
+                    getString(R.string.nick_2014574330_lawrence));
+            listFull.add(fyF_model5);
+        }
     }
 
     private boolean haveNetworkConnection() {
