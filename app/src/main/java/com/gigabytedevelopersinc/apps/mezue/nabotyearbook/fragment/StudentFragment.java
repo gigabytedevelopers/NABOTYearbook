@@ -2,12 +2,10 @@ package com.gigabytedevelopersinc.apps.mezue.nabotyearbook.fragment;
 
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +14,6 @@ import android.widget.GridView;
 import com.gigabytedevelopersinc.apps.mezue.nabotyearbook.R;
 import com.gigabytedevelopersinc.apps.mezue.nabotyearbook.adapters.StudentsAdapter;
 import com.gigabytedevelopersinc.apps.mezue.nabotyearbook.adapters.models.StudentsModel;
-import com.gigabytedevelopersinc.apps.mezue.nabotyearbook.utils.CardViewClickListener;
 
 import java.util.ArrayList;
 import java.util.List;

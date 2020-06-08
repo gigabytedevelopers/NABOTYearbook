@@ -10,18 +10,16 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.widget.CircularProgressDrawable;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.DecodeFormat;
@@ -29,10 +27,8 @@ import com.bumptech.glide.request.RequestOptions;
 import com.crashlytics.android.Crashlytics;
 import com.gigabytedevelopersinc.apps.mezue.classofchamps18.R;
 import com.gigabytedevelopersinc.apps.mezue.classofchamps18.models.ExcossModel;
-import com.gigabytedevelopersinc.apps.mezue.classofchamps18.models.StudentsModel;
 import com.gigabytedevelopersinc.apps.mezue.classofchamps18.utils.CardViewClickListener;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 

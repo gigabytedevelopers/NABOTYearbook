@@ -11,28 +11,24 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.widget.CircularProgressDrawable;
-import android.support.v7.widget.RecyclerView;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
-import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.DecodeFormat;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.FutureTarget;
 import com.bumptech.glide.request.RequestOptions;
 import com.crashlytics.android.Crashlytics;
 import com.gigabytedevelopersinc.apps.mezue.classofchamps18.R;
-import com.gigabytedevelopersinc.apps.mezue.classofchamps18.activities.MainActivity;
 import com.gigabytedevelopersinc.apps.mezue.classofchamps18.fragment.HomeNewsFragment;
 import com.gigabytedevelopersinc.apps.mezue.classofchamps18.fragment.StudentFragment;
 import com.gigabytedevelopersinc.apps.mezue.classofchamps18.models.BirthdayModel;
@@ -40,15 +36,12 @@ import com.gigabytedevelopersinc.apps.mezue.classofchamps18.models.StudentsModel
 import com.gigabytedevelopersinc.apps.mezue.classofchamps18.utils.CardViewClickListener;
 import com.gigabytedevelopersinc.apps.mezue.classofchamps18.utils.TinyDB;
 
-import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
 import java.util.Objects;
-import java.util.concurrent.ExecutionException;
 
 public class StudentsAdapter extends BaseAdapter {
 
