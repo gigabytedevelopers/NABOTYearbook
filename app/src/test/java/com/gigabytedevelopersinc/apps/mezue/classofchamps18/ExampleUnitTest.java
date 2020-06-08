@@ -1,4 +1,4 @@
-package com.gigabytedevelopersinc.apps.mezue.classofchamps18;
+package com.gigabytedevelopersinc.apps.botany.classofchamps18;
 
 import org.junit.Test;
 

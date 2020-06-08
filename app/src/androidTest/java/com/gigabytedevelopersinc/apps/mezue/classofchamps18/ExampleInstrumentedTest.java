@@ -1,4 +1,4 @@
-package com.gigabytedevelopersinc.apps.mezue.classofchamps18;
+package com.gigabytedevelopersinc.apps.botany.classofchamps18;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.gigabytedevelopersinc.apps.mezue.classofchamps18", appContext.getPackageName());
+        assertEquals("com.gigabytedevelopersinc.apps.botany.classofchamps18", appContext.getPackageName());
     }
 }

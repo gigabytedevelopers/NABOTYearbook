@@ -1,4 +1,4 @@
-package com.gigabytedevelopersinc.apps.mezue.nabotyearbook;
+package com.gigabytedevelopersinc.apps.botany.nabotyearbook;
 
 import org.junit.Test;
 
