@@ -1,21 +1,75 @@
 <resources>
-    <string name="app_name">NABOT Yearbook</string>
+    <string name="app_name">Class of Champs \'18</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
     <string name="action_search">Search</string>
+    <string name="class_of_champion">Class of Champions</string>
+    <string name="fyi">Final Year Forum (FYF)</string>
+    <string name="birth_wish">Wish a Happy Birthday</string>
+    <string name="its_my_birthday">Hey It\'s my Birthday</string>
+    <string name="student_info">Student Info</string>
+    <string name="phone_no">Phone Number</string>
+    <string name="email">Email Address</string>
+    <string name="dob">Date of Birth</string>
+    <string name="quotes">Quote</string>
+    <string name="lga">Local Govt</string>
+    <string name="state">State</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_names">Search Names</string>
+
+    <!-- Internet Layout -->
+    <string name="warning_no_internet">Warning, No Internet Connection!</string>
+    <string name="warning_no_internet_message">You can proceed to use this app offline\n(without Internet)\n\n
+        Please be informed that images of individuals will not be shown if you are not
+        connected to the internet (Mobile Data or WiFI)&#8230;
+    </string>
+    <string name="warning_no_internet_proceed">Continue Anyways</string>
+    <string name="internet_proceed">We\'ve detected Internet, Continue</string>
+
+    <!-- Bottom Sheet Dialog -->
+    <string name="bottom_sheet_feedback_msg">Did you notice any errors in your information or your
+        friend\'s information (spelling or omission errors)?\nOr do you want us to update/change your
+        details that is displayed on this app? If yes, Click on the proceed button below to send us a
+        feedback!\n\nThanks.
+    </string>
+    <string name="bottom_sheet_feedback_proceed_btn">Yes, Proceed</string>
+    <string name="bottom_sheet_feedback_cancel_btn">No, Cancel</string>
+
+    <!--Office of the Excos -->
+    <string name="office_dept_president">Departmental President</string>
+    <string name="office_dept_vice_president">Departmental Vice-President</string>
+    <string name="office_dept_sec_general">Departmental Secretary General</string>
+    <string name="office_dept_treasurer">Departmental Treasurer</string>
+    <string name="office_dept_dir_ict">ICT Director (Media &amp; Tech)</string>
+    <string name="office_dept_dos">Director of Socials</string>
+    <string name="gallery">Gallery</string>
+
+    <!--Office of the FYF Excos -->
+    <string name="office_fyf_president">FYF Chairman/President</string>
+    <string name="office_fyf_vice_president">FYF Vice-President</string>
+    <string name="office_fyf_sec_general">FYF Secretary General</string>
+    <string name="office_fyf_treasurer">FYF Treasurer</string>
+    <string name="office_fyf_provost">FYF Provost</string>
 
     <!--Navigation Drawer-->
     <string name="nav_home">Home</string>
+    <string name="nav_news">News</string>
     <string name="nav_about">About</string>
-    <string name="nav_excos">Excos</string>
     <string name="nav_student">Students</string>
+    <string name="nav_fyf">FYF Excos</string>
+    <string name="nav_excos">Department Excos</string>
+    <string name="nav_staffs">Staffs</string>
+
+    <string name="academic_staffs">Academic Staffs</string>
+    <string name="nonAcademic_staffs">Non-Academic Staffs</string>
 
     <!--Info-->
-    <string name="nabot">Nabot</string>
+    <string name="nabot">Class Of Champions \'18</string>
+    <string name="coc_desc">Class Of Champions \'18 Students</string>
+    <string name="fyf_desc">Final Year Forum Student Excos</string>
+    <string name="excos_desc">Departmental Excos</string>
     <string name="nabot_description">National Association Of Botany Students Unizik Chapter</string>
+    <string name="feedback">Send Us a Feedback</string>
 
     <!--Social Media-->
     <string name="fb">Facebook</string>
@@ -26,13 +80,18 @@
     <string name="gig">Developed by Gigabyte Developers</string>
 
 
-    <!--Student Names-->
-
     <!--Test-->
     <string name="test_name">Mezue M. Chuwkudi</string>
+    <string name="test_reg_no">2014174000</string>
+    <string name="test_birth">11th April</string>
+    <string name="test_phone">+2340706705432</string>
+    <string name="test_lga">Awka North</string>
+    <string name="test_nickname">ceejay</string>
     <string name="test_quotes">If it doesn\'t gain me anything leave it</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 
 </resources>

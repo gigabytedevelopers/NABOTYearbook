@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".fragment.StudentAboutFragment">
+    <LinearLayout
+        android:id="@+id/student_aboutLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/student_about_icon"
+                android:layout_height="@dimen/student_about_icon"
+                app:srcCompat="@drawable/ic_cake"
+                android:contentDescription="@string/dob"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_med" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dob"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <TextView
+                android:id="@+id/student_about_dob"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/test_birth"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:layout_marginStart="@dimen/margin_med"
+                android:layout_gravity="center_vertical|end"
+                android:textSize="@dimen/text_size_medium"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/student_about_icon"
+                android:layout_height="@dimen/student_about_icon"
+                app:srcCompat="@drawable/ic_phone_no"
+                android:contentDescription="@string/phone_no"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_med" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_no"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:overScrollMode="never"
+                android:layout_marginStart="@dimen/padding_med"
+                android:layout_marginEnd="@dimen/padding_small">
+                <TextView
+                    android:id="@+id/student_about_phone_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginStart="@dimen/margin_med"
+                    android:text="@string/test_phone"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="center_vertical|end"
+                    android:textSize="@dimen/text_size_medium"/>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/student_about_icon"
+                android:layout_height="@dimen/student_about_icon"
+                app:srcCompat="@drawable/ic_email"
+                android:contentDescription="@string/email"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_med" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:overScrollMode="ifContentScrolls"
+                android:layout_marginStart="@dimen/padding_med">
+                <TextView
+                    android:id="@+id/student_about_email_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_marginStart="@dimen/margin_med"
+                    android:text="@string/email_2014574370_gigabyte"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="center_vertical|end"
+                    android:paddingEnd="8dp"
+                    android:textSize="@dimen/text_size_medium"/>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/student_about_icon"
+                android:layout_height="@dimen/student_about_icon"
+                app:srcCompat="@drawable/ic_lga"
+                android:contentDescription="@string/lga"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_med" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lga"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <TextView
+                android:id="@+id/student_about_lga"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/test_lga"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/margin_med"
+                android:textAlignment="textEnd"
+                android:layout_gravity="center_vertical|end"
+                android:textSize="@dimen/text_size_medium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/student_about_icon"
+                android:layout_height="@dimen/student_about_icon"
+                app:srcCompat="@drawable/ic_state"
+                android:contentDescription="@string/state"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_med" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/state"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_size_medium"/>
+
+            <TextView
+                android:id="@+id/student_about_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/state_Anambra"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:layout_marginStart="@dimen/margin_med"
+                android:layout_gravity="center_vertical|end"
+                android:textSize="@dimen/text_size_medium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/student_about_icon"
+                android:layout_height="@dimen/student_about_icon"
+                app:srcCompat="@drawable/ic_quotes"
+                android:contentDescription="@string/quotes"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_med" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quotes"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_size_medium"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/divider"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:paddingStart="@dimen/padding_medium"
+            android:paddingEnd="@dimen/padding_medium">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_size"
+                android:background="@color/divider" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/student_about_quotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:text="@string/quote_2014574421_fortunate"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textSize="@dimen/text_size_medium"/>
+
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

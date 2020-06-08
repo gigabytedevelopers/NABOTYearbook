@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android">
+    <tab
+        id="@+id/tab_home_main"
+        icon="@drawable/ic_account_balance_black_24dp"
+        title="@string/nav_home"/>
+    <tab
+        id="@+id/tab_news"
+        icon="@drawable/ic_info_black_24dp"
+        title="@string/nav_news"/>
+
+</tabs>

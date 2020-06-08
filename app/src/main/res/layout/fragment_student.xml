@@ -16,6 +16,9 @@
         android:columnWidth="@dimen/columnswidth"
         android:minWidth="@dimen/mincolumnswidth"
         android:stretchMode="columnWidth"
+        android:scrollingCache="false"
+        android:animationCache="false"
+        android:smoothScrollbar="true"
         android:scrollbars="none">
 
     </GridView>

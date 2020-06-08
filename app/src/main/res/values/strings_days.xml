@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="day_1">1st</string>
+    <string name="day_2">2nd</string>
+    <string name="day_3">3rd</string>
+    <string name="day_4">4th</string>
+    <string name="day_5">5th</string>
+    <string name="day_6">6th</string>
+    <string name="day_7">7th</string>
+    <string name="day_8">8th</string>
+    <string name="day_9">9th</string>
+    <string name="day_10">10th</string>
+    <string name="day_11">11th</string>
+    <string name="day_12">12th</string>
+    <string name="day_13">13th</string>
+    <string name="day_14">14th</string>
+    <string name="day_15">15th</string>
+    <string name="day_16">16th</string>
+    <string name="day_17">17th</string>
+    <string name="day_18">18th</string>
+    <string name="day_19">19th</string>
+    <string name="day_20">20th</string>
+    <string name="day_21">21st</string>
+    <string name="day_22">22nd</string>
+    <string name="day_23">23th</string>
+    <string name="day_24">24th</string>
+    <string name="day_25">25th</string>
+    <string name="day_26">26th</string>
+    <string name="day_27">27th</string>
+    <string name="day_28">28th</string>
+    <string name="day_29">29th</string>
+    <string name="day_30">30th</string>
+    <string name="day_31">31st</string>
+    <string name="date_unknown">Unknown</string>
+</resources>

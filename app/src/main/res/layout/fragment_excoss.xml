@@ -10,7 +10,7 @@
         android:id="@+id/excoss_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/padding_med"
+        android:padding="@dimen/padding_small"
         android:scrollbars="none">
 
     </android.support.v7.widget.RecyclerView>

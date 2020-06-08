@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Student Quotes-->
+    <!-- TODO: Reminder to add Quote for 2014574407, 2014574425 -->
+    <string name="quote_2014574329_miriam">Your background can\'t stop you from getting to your
+        destination, be positive and never stop striving until you get there.
+    </string>
+    <string name="quote_2014574330_lawrence">A man without shoes, when he sees a man without feet, he
+        will thank his God, so be contended with what you have.
+    </string>
+    <string name="quote_2014574331_prisca">Live while you are still living, don\'t die without
+        maximizing your potentials.
+    </string>
+    <string name="quote_2014574332_doris">Treat others the way you want to be treated.</string>
+    <string name="quote_2014574333_francess">If your action inspires others to dream more, learn more
+        and do more, then you are a leader.
+    </string>
+    <string name="quote_2014574335_christian">Gratitude is happiness doubled by wonder. We make a
+        living by what we get, we make life by what we give.
+    </string>
+    <string name="quote_2014574336_chioma">Never give up in life, once there is life, there is hope!
+        We will part to meet again. Congratulations and success in all we do. Let\'s explore!
+    </string>
+    <string name="quote_2014574337_favour">God is love.</string>
+    <string name="quote_2014574338_kenechi">Money is not easy to get, but talent is difficult to
+        develop.
+    </string>
+    <string name="quote_2014574339_joshua">The secret of Godly greatness is humility, just be humble
+        and beyond the skies will be your limit.
+    </string>
+    <string name="quote_2014574340_chioma_rita">The key for elevation is self love, when you cherish
+        your own self.
+    </string>
+    <string name="quote_2014574342_makuochukwu">Love and be loved.</string>
+    <string name="quote_2014574343_lilian">What doesn\'t kill you, makes you stronger.</string>
+    <string name="quote_2014574344_collins"><i>"Nemo dat quod non habet"</i>\n When things go wrong,
+        don\'t go wrong with them.
+    </string>
+    <string name="quote_2014574345_obianuju">Now the real life starts.</string>
+    <string name="quote_2014574346_goodness">Jude 1 vs 22.</string>
+    <string name="quote_2014574347_ikechukwu">For I know the plans I have for you declares the Lord,
+        plans to prosper you and not to harm you, plans to give you hope and a future.
+    </string>
+    <string name="quote_2014574348_precious">The seeds of kindness you plant today will blossom into
+        blessing for the future.
+    </string>
+    <string name="quote_2014574350_charity">Strive for greatness. The time is always right to do what
+        is right.
+    </string>
+    <string name="quote_2014574352_kingsley">The path to genuine success is littered with obstacles,
+        only those who preserve to the end become successful.
+    </string>
+    <string name="quote_2014574354_augustine">Sometimes the greatest way to say something is to say
+        nothing at all.
+    </string>
+    <string name="quote_2014574355_judith">I can do all things through christ who strengthens
+        me.
+    </string>
+    <string name="quote_2014574356_onyinyechi">A single step in the right direction will pave your
+        future with gold.
+    </string>
+    <string name="quote_2014574361_chidiebere">Do the best you can for humanity.</string>
+    <string name="quote_2014574366_cynthia">Don\'t stress about the closed doors behind you, new doors
+        are opening if you keep moving forward.
+    </string>
+    <string name="quote_2014574357_emeka">Think, talk and live positively.</string>
+    <string name="quote_2014574358_kelvin">For all you do in life, put God first for he determines
+        success and give victory.
+    </string>
+    <string name="quote_2014574359_ndidi">Every next level of your life will demand a different you;
+        don\'t wait to see the whole staircase, just take a step.
+    </string>
+    <string name="quote_2014574360_blessing">Whatever you find doing, put in your best, humility
+        is the key.
+    </string>
+    <string name="quote_2014574363_adaobi">Be yourself.</string>
+    <string name="quote_2014574364_amaobi">It wasn\'t an easy journey but as usual <b>"THE LION</b>
+        owns the jungle.\n Thanks.
+    </string>
+    <string name="quote_2014574365_augustina">Life is a quest, conquer it.</string>
+    <string name="quote_2014574367_ifechukwu">All man for himself. One God for us all.</string>
+    <string name="quote_2014574368_chiamaka">Execute.</string>
+    <string name="quote_2014574369_emezie">Do more work on your character than your reputation.
+        Your reputation is what people think you are while your character is who you are. Above all,
+        be happy loving and be loved.
+    </string>
+    <string name="quote_2014574370_gigabyte">Be a source of inspiration to people, help someone where
+        you deem capable, let someone say <b>"<i>Because of you, I didn\'t give up!</i>"</b>.
+    </string>
+    <string name="quote_2014574372_pauline">Wanting to be someone else is a waste of who you are, so
+        be yourself.
+    </string>
+    <string name="quote_2014574373_ijeoma">Don\'t chase people, be yourself, do your own thing and
+        work hard. The right people, the ones who really belong in your life, will come to you and stay.
+    </string>
+    <string name="quote_2014574374_onyekachi">Discipline is the bridge between goals and
+        accomplishments.
+    </string>
+    <string name="quote_2014574375_vanessa">Live life with diligence, decode your own epic.</string>
+    <string name="quote_2014574376_susan">Set your priorities right. God over everything.</string>
+    <string name="quote_2014574377_rosemary">Don\'t stop because you are tired but stop because you
+        have finished.
+    </string>
+    <string name="quote_2014574378_chukwusom">Work as if you don\'t need money. Dance as if nobody is
+        watching. Love as if you never cried. Learn as if you will live forever. Just be happy.
+        Appreciate what you have.\n #Dj Ozone.
+    </string>
+    <string name="quote_2014574379_friday">The you in you makes you the you, you are.</string>
+    <string name="quote_2014574380_blessing">The world is a global village, so do to others what you
+        want them to do to you.
+    </string>
+    <string name="quote_2014574383_chidiogo">Not all scars show, not all wounds heal, not all illness
+        can be seen, not all pain is obvious. Please remember this before you judge someone.
+    </string>
+    <string name="quote_2014574384_joyce">I\'m nothing without God, He\'s still God without me.</string>
+    <string name="quote_2014574385_peter">Whatsoever you do for people is your worth to them.</string>
+    <string name="quote_2014574386_daniel">No one can motivate you until you motivate yourself.</string>
+    <string name="quote_2014574387_vincent">Quitters never win.</string>
+    <string name="quote_2014574388_chinasa">Don\'t let the person in you kill the desire in you.
+        Keep burning.
+    </string>
+    <string name="quote_2014574390_hope">Christ in you, the hope of glory.</string>
+    <string name="quote_2014574392_florence">The best way to create your future is to first create an
+        opportunity.
+    </string>
+    <string name="quote_2014574393_patience">White is not always light. Black is not always dark.</string>
+    <string name="quote_2014574395_blessing">Popularity is not a day\'s job.</string>
+    <string name="quote_2014574396_shalom">Whatever the activity in which you engage, do it with all
+        your ability because there\'s no work, no planning, no learning and no wisdom in the next
+        world where you\'re given.
+    </string>
+    <string name="quote_2014574397_obumneme">Do good to people, not because they deserve it but because
+        it is right.
+    </string>
+    <string name="quote_2014574398_judith">Always see a positive end from the beginning.</string>
+    <string name="quote_2014574399_tobechukwu">There is always light at the end of the tunnel. Stay
+        focused.
+    </string>
+    <string name="quote_2014574400_jennifer">There\'s always room for improvement.</string>
+    <string name="quote_2014574401_blessing">Being yourself is the best you can be.</string>
+    <string name="quote_2014574402_ogechukwu">Lets learn to care and love one another without expecting
+        material gifts from our loved ones. If it will help us understand human values and worth.
+    </string>
+    <string name="quote_2014574403_faith">Be pretty, dress well, be prayerful and above all, be
+        educated. You will always seem to stand out.
+    </string>
+    <string name="quote_2014574404_kenneth">Success is when preparations meets opportunity.</string>
+    <string name="quote_2014574405_samuel">He who thinks doesn\'t run. He who run doesn\'t think.</string>
+    <string name="quote_2014574406_henry">No police No my name.</string>
+    <string name="quote_2014574407_maryjane">No Quote provided yet.</string>
+    <string name="quote_2014574408_ifeanyi">Never give up!</string>
+    <string name="quote_2014574409_rita">Knowledge is like a crop, it can never be harvested if not
+        cultivated. Divinity does nothing for humanity until someone prays.
+    </string>
+    <string name="quote_2014574410_precious">Determination with God\'s grace leads to success. Christ
+        is my solid rock.
+    </string>
+    <string name="quote_2014574412_smiling">There is always another chance for everything in life,
+        but the fact is that there is no chance of another life. So let us dream it, mean it, love it
+        and live it.
+    </string>
+    <string name="quote_2014574413_peace">Not everything that counts should be counted and not
+        everything that\'s counted truly counts.
+    </string>
+    <string name="quote_2014574414_emskaro">Keep pushing, keep working, keep praying till you make
+        it.
+    </string>
+    <string name="quote_2014574415_franca">The choices you make effect changes in your life.</string>
+    <string name="quote_2014574416_zuma">The forces of political monopoly and economic monopsory will
+        always lead to the monotony of failure.
+    </string>
+    <string name="quote_2014574417_sylvia">One with God is majority.</string>
+    <string name="quote_2014574419_lawrence">Just do it.</string>
+    <string name="quote_2014574420_jennifer">It is not an easy road, but with God it is easy. Always
+        put God first in all you do in life. Be a witness, not a judge. Focus on yourself, not on
+        others. Listen to your heart , not to the crowd.
+    </string>
+    <string name="quote_2014574421_fortunate">It doesn\'t matter what you are or what you went through.
+        God\'s eyes is open very wide and all you need is to believe that all things are possible.
+        Remember history doesn\'t talk about gutters. God is the greatest!
+    </string>
+    <string name="quote_2014574422_anthony">Your imagination is your preview of life\'s coming
+        attractions.
+    </string>
+    <string name="quote_2014574423_perpetual">Yesterday is not ours to recover, but tomorrow is ours
+        to win or lose.
+    </string>
+    <string name="quote_2014574424_zikora">It all becomes clearer at the end.</string>
+    <string name="quote_2014574425_mishael">No Quote provided yet.</string>
+    <string name="quote_2014574426_vincent">Strive not to be a success, but rather to be
+        a value.
+    </string>
+    <string name="quote_2014574427_chiemerie">Aim higher, never settle for less.</string>
+    <string name="quote_2014574428_ifeanyi">Grace is all.</string>
+    <string name="quote_2014574429_celestina">Life is a race. Run it and run yours. Una bye bye
+        abeg.
+    </string>
+    <string name="quote_2014574432_chiazagom">It\'s a small world.</string>
+    <string name="quote_2014574434_kennedy">Do the good you can now that you can.</string>
+    <string name="quote_2014574435_victor">One who loves eating two eggs at a time does not know when
+        he consumes a hen and a cock together.
+    </string>
+    <string name="quote_2014574437_nduka">Values and virtues are not hereditary, they are learned.</string>
+    <string name="quote_2014574438_gabriel">Unless you urinate on a spot it will never foam.</string>
+    <string name="quote_2013474386_ebuka">My hustle moves on!!!</string>
+    <string name="quote_2013474278_mary">Be beautiful, be happy. Life is too short to be unhappy.</string>
+    <string name="quote_2013464162_angus">Life is my message.</string>
+    <string name="quote_2013614232_victor">For we work by faith, not by sight.</string>
+    <string name="quote_2013634226_maryjane">The people who don\'t study have very less things to
+        think upon. Always love books.
+    </string>
+    <string name="quote_2014574440_emmanuel">Light the world.</string>
+    <string name="quote_2014464245_chisom">Always make the right decision because we live by the
+        decisions we make.
+    </string>
+    <string name="quote_2012464169_linda">In all you do, put God first.</string>
+    <string name="quote_2011474018_christian">Humility and kindness can lead to God.</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okigbo">Prof. Raphael Okigbo</string>
+    <string name="okigbo_office">Lecturer</string>
+    <string name="okigbo_phone">+2348158576171</string>
+
+    <string name="amadi">Prof. Jude Amadi</string>
+    <string name="amadi_office">Lecturer</string>
+    <string name="amadi_phone">+2348158576171</string>
+</resources>

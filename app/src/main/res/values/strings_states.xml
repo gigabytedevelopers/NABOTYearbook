@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--State Names-->
+    <string name="state_Abia">Abia</string>
+    <string name="state_Adamawa">Adamawa</string>
+    <string name="state_AkwaIbom">Akwa Ibom</string>
+    <string name="state_Anambra">Anambra</string>
+    <string name="state_Bauchi">Bauchi</string>
+    <string name="state_Bayelsa">Bayelsa</string>
+    <string name="state_Benue">Benue</string>
+    <string name="state_Borno">Borno</string>
+    <string name="state_CrossRiver">Cross River</string>
+    <string name="state_Delta">Delta</string>
+    <string name="state_Ebonyi">Ebonyi</string>
+    <string name="state_Enugu">Enugu</string>
+    <string name="state_Edo">Edo</string>
+    <string name="state_Ekiti">Ekiti</string>
+    <string name="state_Gombe">Gombe</string>
+    <string name="state_Imo">Imo</string>
+    <string name="state_Jigawa">Jigawa</string>
+    <string name="state_Kaduna">Kaduna</string>
+    <string name="state_Kano">Kano</string>
+    <string name="state_Katsina">Katsina</string>
+    <string name="state_Kebbi">Kebbi</string>
+    <string name="state_Kogi">Kogi</string>
+    <string name="state_Kwara">Kwara</string>
+    <string name="state_Lagos">Lagos</string>
+    <string name="state_Nasarawa">Nasarawa</string>
+    <string name="state_Niger">Niger</string>
+    <string name="state_unknown">Unknown</string>
+    <string name="state_Ogun">Ogun</string>
+    <string name="state_Ondo">Ondo</string>
+    <string name="state_Osun">Osun</string>
+    <string name="state_Oyo">Oyo</string>
+    <string name="state_Plateau">Plateau</string>
+    <string name="state_Rivers">Rivers</string>
+    <string name="state_Sokoto">Sokoto</string>
+    <string name="state_Taraba">Taraba</string>
+    <string name="state_Yobe">Yobe</string>
+    <string name="state_Zamfara">Zamfara</string>
+</resources>

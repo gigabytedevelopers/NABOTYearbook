@@ -10,7 +10,10 @@
     <dimen name="text_size_medium">16sp</dimen>
     <dimen name="text_size_large">18sp</dimen>
     <dimen name="text_size_larger">20sp</dimen>
-    <dimen name="tet_size_waybig">24sp</dimen>
+    <dimen name="text_size_waybig">24sp</dimen>
+
+    <!--Divider Size-->
+    <dimen name="divider_size">1dp</dimen>
 
     <!--Padding-->
     <dimen name="padding_small">5dp</dimen>
@@ -21,9 +24,18 @@
     <dimen name="cardview_padding">8dp</dimen>
     <dimen name="frame_padding">17.5dp</dimen>
 
+    <!--Tab-->
+    <dimen name="bottom_bar_height">56dp</dimen>
+
     <!--ImageView-->
     <dimen name="imageview_insane_height">200dp</dimen>
-    <dimen name="profile_image_size_about">90dp</dimen>
+    <dimen name="student_about_icon">24dp</dimen>
+    <dimen name="collapse_profile">89.5dp</dimen>
+    <dimen name="image_social_dimen">32dp</dimen>
+    <dimen name="about_social_dimen">42dp</dimen>
+    <dimen name="profile_image_size_about">120dp</dimen>
+    <dimen name="icon_about">40dp</dimen>
+    <dimen name="nav_header_icon">150dp</dimen>
     <dimen name="excoss_width">120dp</dimen>
     <dimen name="excoss_height">150dp</dimen>
     <dimen name="image_card_height">180dp</dimen>
@@ -38,4 +50,7 @@
     <!--Columns-->
     <dimen name="columnswidth">130dp</dimen>
     <dimen name="mincolumnswidth">130dp</dimen>
+    <dimen name="app_bar_height">250dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 </resources>
